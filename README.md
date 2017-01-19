@@ -1,2 +1,2 @@
 # seahorse
-adventures under the sea
+This is the repository that serves the Right to be Forgotten chain service from Seahorse.
