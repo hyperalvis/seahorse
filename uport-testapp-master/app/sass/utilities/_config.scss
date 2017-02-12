@@ -1,0 +1,129 @@
+// ==========================================================================
+// Global Config
+// ==========================================================================
+
+// Font Stacks
+
+$font-url--google        : 'https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i';
+
+$font-family--primary    : 'Roboto','Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+// Font Weights
+
+$font-weight--thin       : 500;
+$font-weight--light      : 600;
+$font-weight--medium     : 600;
+$font-weight--bold       : 700;
+$font-weight--ultra-bold : 800;
+
+// Logo Styles
+$logo-mark: '../images/uPort-logo.svg';
+$logo-mark--width: 40px;
+$logo-mark--height: 54px;
+$logo-mark--outer-width: 50px;
+$logo-mark--outer-height: 50px;
+$logo-mark--large-width: 40px;
+$logo-mark--large-height: 54px;
+$logo-mark--large-outer-width: 60px;
+$logo-mark--large-outer-height: 60px;
+
+// Descriptive Base Colors
+
+$white    : #fff;
+$black    : #0b0b0b;
+$grey     : #ccd3d2;
+
+
+// Descriptive colors from http://chir.ag/projects/name-that-color
+$eminence : #612d85;
+$maroon-flush: #d81f4b;
+$sunglow: #ffc334;
+$london-hue: #bfaecd;
+$deluge : #8559a2;
+$jacarta: #36236a;
+$affair: #7f499f;
+$studio : #8940b7;
+$minsk: #532c7f;
+
+// Color Usage
+$color-background: $white;
+$color-primary   : $jacarta;
+$color-secondary : $maroon-flush;
+//$color-accent    : $bright-sun;
+$color-shadow    : rgba($black, .2);
+
+$btn-border: $deluge;
+$btn-secondary: $sunglow;
+
+// Color Palette Modifiers
+
+$color-palettes: (
+	grey: (
+		xx-light : lighten($grey, 43%),
+		x-light  : lighten($grey, 35%),
+	  light    : lighten($grey, 12%),
+	  base     : $grey,
+	 	dark     : darken($grey, 15%),
+	 	x-dark   : darken($grey, 30%),
+	 	xx-dark  : darken($grey, 45%)
+	),
+	black: (
+		light    : lighten($black, 10%),
+		base     : $black,
+		dark     : darken($black, 10%)
+	)
+);
+
+// UI Colors
+
+/*
+$ui-colors: (
+	default : $prussian-blue,
+	success : $turquoise,
+	error   : $carnation,
+	warning : $tree-poppy,
+	info    : $bright-sun
+);
+*/
+
+// TODO: Set default margins (20px);
+
+// Text
+
+$base__font-size : 18px;
+$base__line      : 24px;
+$letter-space    : 1px;
+
+// Border radius
+
+$br--default    : .4em;
+$br--round      : 50%;
+
+// Transitions
+
+$trns-duration  : .3s;
+
+// Path to Assets
+$path--rel      : "../images/";
+
+// Breakpoints
+$brkpoint-xs : 1px;
+$brkpoint-sm : 480px;
+$brkpoint-md : 768px;
+$brkpoint-lg : 1100px;
+
+$nav-width: 180px;
+
+
+// Grid Variables
+$gutter : percentage(20px/940px); // 20px at 960px wide container, accounting for a 1/2 gutter width padding on the left and right of the container
+$one-column : 6.3829787%; // 60px at 960px wide container
+$columns-break-point: 481px !default; // set this to the minimum width you want the columns to take effect at
+$container-max-width: 1320px !default; // set this to the maximum width you want .container to have
+$flexbox-support : true !default; // set this to true to include support for CSS Flexbox (modern syntax).
+
+// a collection of the columns you want to build. the first parameter must be an integer of how many columns wide this instance is, followed by 1 or more class names to apply this width to.
+$column-list:    (2, "two") (3, "three", "one-fourth") (4, "four", "one-third") (5, "five") (6, "six", "one-half") (7, "seven") (8, "eight", "two-thirds") (9, "nine", "three-fourths") (10, "ten") (11, "eleven") (12, "twelve", "full") !default;
+
+// a collection of the offsets you want to build. the first parameter must be an integer of how many columns wide this instance is offset, followed by 1 or more class names to apply this offset to.
+$offset-list:    (1, "one") (2, "two") (3, "three") (4, "four") (5, "five") (6, "six") (7, "seven") (8, "eight") (9, "nine") (10, "ten") (11, "eleven") !default;

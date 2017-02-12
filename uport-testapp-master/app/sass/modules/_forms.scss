@@ -1,0 +1,115 @@
+  form {
+	ol {
+		list-style-type: none;
+		padding: 0;
+		margin:0;
+		li {
+	     margin:0;
+	     padding:0;
+	  }
+   	&.indicator {
+     &:before {
+      content: "\f107";
+      text-align:center;
+      font-family: FontAwesome;
+      color: $eminence;
+      font-size: em(40px);
+      margin-bottom: -26px;
+      display: block;
+    }
+   }
+  }
+  &.inline {
+    ol li {
+      display: inline;
+      padding-right: 20px;
+    }
+ 	}    
+}
+
+input,
+textarea {
+	background: transparent;
+	margin: 0;
+	padding: 8px;
+	font-weight: $font-weight--bold;
+}
+
+textarea {
+	min-height: 100px;
+	overflow-y: hidden;
+	border: 3px solid $eminence;
+	color: $white;
+  border-radius: 15px;
+  padding-left: 15px;
+  &::-webkit-input-placeholder {
+    color: $white;
+  }
+}
+
+input {
+	border: 3px solid $minsk;
+	border-radius: 30px;
+	color: $white;
+	padding-left: 19px;
+	font-weight: $font-weight--medium;
+	letter-spacing: em(0.3px);
+	font-size: em(14px);
+      
+  //TODO: Create mixin to handle this vendor-prefix nonsense
+  &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: $white;
+    text-align: center;
+    text-indent: -20px;
+  }
+  &::-moz-placeholder { /* Firefox 19+ */
+    color: $white;
+    text-align: center;
+    margin-left: -24px;
+    text-indent: -20px;
+  }
+  &:-ms-input-placeholder { /* IE 10+ */
+    color: $white;
+    text-align: center;
+    margin-left: -24px;
+    text-indent: -20px;
+  }
+  &:-moz-placeholder { /* Firefox 18- */
+    color: $white;
+    text-align: center;
+    margin-left: -24px;
+    text-indent: -20px;
+  }
+
+  &:focus {
+    &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+      visibility: hidden;
+    }
+    &::-moz-placeholder { /* Firefox 19+ */
+      visibility: hidden;
+    }
+    &:-ms-input-placeholder { /* IE 10+ */
+      visibility: hidden;
+    }
+    &:-moz-placeholder { /* Firefox 18- */
+      visibility: hidden;
+    }
+  }
+  &.special {
+    border-color: $sunglow;
+  }
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+    -webkit-text-fill-color: white !important;
+}
+
+
+input:focus::-webkit-input-placeholder { color:transparent; }
+input:focus:-moz-placeholder { color:transparent; } /* FF 4-18 */
+input:focus::-moz-placeholder { color:transparent; } /* FF 19+ */
+input:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */

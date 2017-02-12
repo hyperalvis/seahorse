@@ -1,0 +1,79 @@
+{
+  "name": "uport-testapp",
+  "version": "1.3.1",
+  "description": "uPort Test App",
+  "main": "serversa.js",
+  "scripts": {
+    "test": "echo \"no test specified\" && exit 0",
+    "webpack": "webpack --progress --colors",
+    "webpackwatch": "webpack --progress --colors --watch",
+    "start": "node server/index.js",
+    "postinstall": "npm run webpack",
+    "deploy-develop": "node_modules/.bin/surge --domain https://testapp.uport.space build/",
+    "deploy": "node_modules/.bin/surge --domain https://testapp.uport.me build/"
+  },
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ConsenSys/uport-testapp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ConsenSys/uport-testapp/issues"
+  },
+  "authors": [
+    {
+      "name": "Greg Bugyis",
+      "email": "greg.bugyis@consensys.net",
+      "url": "http://gbugy.is"
+    },
+    {
+      "name": "Andrés Junge",
+      "email": "andres.junge@consensys.net",
+      "url": "https://consensys.net"
+    },
+    {
+      "name": "Joel Torstensson",
+      "email": "joel.torstensson@consensys.net",
+      "url": "https://consensys.net"
+    }
+  ],
+  "homepage": "http://testapp.uport.me",
+  "dependencies": {
+    "babel-core": "^6.10.4",
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react": "^6.11.1",
+    "bluebird": "^3.4.1",
+    "body-parser": "^1.15.2",
+    "bootstrap": "^3.3.6",
+    "browser-ipfs": "0.0.6",
+    "bs58": "^3.0.0",
+    "copy-webpack-plugin": "^3.0.1",
+    "css-loader": "^0.23.1",
+    "express": "^4.14.0",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.9.0",
+    "json-loader": "^0.5.4",
+    "less": "^2.7.1",
+    "less-loader": "^2.2.3",
+    "node-sass": "^3.8.0",
+    "rc-progress": "^2.0.1",
+    "react": "^15.2.1",
+    "react-addons-css-transition-group": "^15.3.2",
+    "react-dom": "^15.2.1",
+    "react-file-reader-input": "^1.1.0",
+    "react-router": "^2.5.2",
+    "sass-loader": "^4.0.0",
+    "style-loader": "^0.13.1",
+    "uport-lib": "2.1.1",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.13.1",
+    "webpack-dev-middleware": "^1.6.1",
+    "webpack-hot-middleware": "^2.12.2"
+  },
+  "devDependencies": {
+    "react-hot-loader": "^1.3.0",
+    "surge": "^0.18.0",
+    "webpack-dev-server": "^1.14.1"
+  }
+}

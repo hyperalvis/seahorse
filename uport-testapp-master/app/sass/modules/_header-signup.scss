@@ -1,0 +1,52 @@
+.signup {
+  header {
+    color: $color-primary;
+    padding: 0;
+    font-weight: 700;
+    font-family: $font-family--primary;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 5;
+    padding: 20px 40px 0;
+    h1 {
+      margin: 0;
+      display: inline;
+      font-size: em(16px);
+      font-weight: inherit;
+    }
+  }
+
+  #brand {
+    float: left;
+    color: $color-primary;
+    font-size: em(14px);
+    display: block;
+    height: $logo-mark--outer-height;
+    line-height: $logo-mark--outer-height;
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+    padding-top: 15px;
+    @include mq(large) {
+      height: $logo-mark--large-outer-height;
+      line-height: $logo-mark--large-outer-height;
+    }
+    i,
+    b {
+      display: inline-block;
+      height: $logo-mark--outer-height;
+      padding-left: $logo-mark--outer-width;
+      width: 0;
+      overflow: hidden;
+      background: url($logo-mark) no-repeat center center;
+     
+      @include mq(large) {
+        background-image: url($logo-mark);
+        padding-left: $logo-mark--large-outer-width;
+        height: $logo-mark--large-outer-height;
+      }
+    }
+  }
+}

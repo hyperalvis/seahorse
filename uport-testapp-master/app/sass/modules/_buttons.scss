@@ -1,0 +1,52 @@
+button {
+  // border-radius: 30px;
+  text-align: center;
+  position: relative;
+  background-color: #2092ED;
+  color: $white;
+  font-size: em(14px);
+  // font-weight: $font-weight--bold;
+  font-family: $font-family--primary;
+  white-space: nowrap;
+  margin: 5px 0 0;
+  border: 0;
+	padding: 10px 28px;
+
+  &.transparent {
+  	background-color: transparent;
+  	border-color: $btn-border;
+  	color: $white;
+  	margin-top: 10px;
+  }
+  &.bigger {
+  	width: 205px;
+  }
+  &.btn-secondary {
+  	background-color: $btn-secondary;
+  	font-size: em(14px);
+    padding: 14px 28px;
+  }
+  &.edit {
+  	position: relative;
+    float: right;
+    margin-top: -5px;
+    background-color: $eminence;
+    padding: 8px 40px 8px 20px;
+    &:after {
+      content: "\f040";
+      font-family: FontAwesome;
+      position:absolute;
+      color: $maroon-flush;
+      top: 9px;
+      padding: 0 10px;
+    }
+  }
+  &.btn-tertiary {
+    background-color: transparent;
+    border: 3px solid $sunglow;
+    color: $sunglow;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+
+}

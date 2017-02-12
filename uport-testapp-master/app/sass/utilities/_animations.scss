@@ -1,0 +1,21 @@
+
+//ToDo: Add animation mixin
+
+/* From Dan Eden's animate.css: http://daneden.me/animate/ */
+@-webkit-keyframes shake {
+	0%, 100% {-webkit-transform: translateX(0);}
+	20%, 60% {-webkit-transform: translateX(-10px);}
+	40%, 80% {-webkit-transform: translateX(10px);}
+}
+
+@-moz-keyframes shake {
+	0%, 100% {-moz-transform: translateX(0);}
+	20%, 60% {-moz-transform: translateX(-10px);}
+	40%, 80% {-moz-transform: translateX(10px);}
+}
+
+@keyframes shake {
+	0%, 100% {transform: translateX(0);}
+	20%, 60% {transform: translateX(-10px);}
+	40%, 80% {transform: translateX(10px);}
+}

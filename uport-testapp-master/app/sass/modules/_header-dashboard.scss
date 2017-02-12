@@ -1,0 +1,61 @@
+.dashboard {
+	header {
+		position: relative;
+		max-width: 1500px;
+		height: 100%;
+		display: block;
+	}
+
+	.account {
+		margin-top: 12px;
+		text-align: right;
+		float: right;
+		
+		> .profile-img {
+			width: 30px;
+			height: 30px;
+			border-radius: 15px;
+			overflow: hidden;
+			margin-left: 10px;
+			float: right;
+		}
+
+		> .user-info {
+			float: right;
+
+			> .user-name {
+				line-height: 18px;
+				font-weight: 700;
+			}
+
+			> .user-role {
+				font-size: 10px;
+				line-height: 10px;
+				font-weight: 600;
+				color: #ced5d3;
+			}
+		}
+	}
+
+	@media (max-width: ($brkpoint-sm - 1)) {
+		.account {
+			float: none;
+			text-align: center;
+			margin: 20px auto;
+
+			> .profile-img {
+				float: none;
+				width: 100px;
+				height: 100px;
+				margin: 0 auto;
+			}
+
+			> .user-info {
+				margin-top: 15px;
+				float: none;
+			}
+		}
+		border-bottom: 2px dotted $grey;
+	}
+}
+

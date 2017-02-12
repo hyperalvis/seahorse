@@ -1,0 +1,58 @@
+.dashboard {
+	nav {
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		width: $nav-width;
+		z-index: 101;
+		background: $grey;
+
+
+		ul {
+			list-style-type: none;
+			padding: 0 5px;
+			li {
+				padding: 20px 0 20px 20px;
+				a {
+					text-decoration: none;
+					color : #949ca7;
+					padding: 20px 5px;
+					font-weight: $font-weight--medium;
+					&:hover, &.active {
+						color: $color-primary
+					}
+				}
+				i.fa {
+					padding-right: 5px;
+					font-size: em(22px);
+				}
+				&:hover {
+					i.fa {
+						//background-color: palette(grey,dark);
+						//border-radius: $br--default;
+					}
+				}
+			}
+		}
+
+	}
+
+	#brand {
+		background-color: #f1f1f1;
+		margin-top: 0;
+		text-align:center;
+		img {
+			margin: 1em 0;
+		}
+	}
+
+	#toggle-nav {
+		margin-top: 16px;
+		> .icon-bar {
+			background-color: $color-primary;
+		}
+		@media (min-width: $brkpoint-sm) {
+			display:none;
+		}
+	}
+}

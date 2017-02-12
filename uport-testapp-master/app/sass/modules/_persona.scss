@@ -1,0 +1,20 @@
+.persona {
+	> tbody {
+		> tr {
+			> td {
+				display:block;
+				&.avatar {
+					width: 200px;
+					text-align: center;
+					white-space: normal;
+					margin: 0 auto;
+				}
+			}
+			@media screen and (min-width: $brkpoint-sm) {
+				> td {
+					display: table-cell;
+				}
+			}
+		}
+	}
+}

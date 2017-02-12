@@ -1,0 +1,82 @@
+.signup {
+  nav {
+    font-size: em(14px);
+    line-height: (17/14);
+    a {
+      text-decoration: none;
+      color: $white;
+      &:hover,
+      &:focus,
+      &:active,
+      &.active {
+        color: $white;
+      }
+      .home & {
+        color: $white;
+        &:hover,
+        &:focus,
+        &:active,
+        &.active {
+          color: $white;
+        }
+      }
+      b {
+        color: $studio;
+        display: inline-block;
+        font-weight: $font-weight--ultra-bold;
+        font-size: em(17px);
+        line-height: (19/17);
+        position: relative;
+        margin-left: 3px;
+      }
+    }
+    ul {
+      display:none;
+      clear: both;
+      text-align: left;
+      margin-top: 0;
+
+      @include mq(medium) {
+        display: inline-block;
+        clear: none;
+        text-align: right;
+        float: right;
+        height: $logo-mark--outer-height;
+        line-height: $logo-mark--outer-height;
+        padding-bottom: 0;
+
+      }
+      @include mq(large) {
+        height: $logo-mark--large-outer-height;
+        line-height: $logo-mark--large-outer-height;
+      }
+    }
+    li {
+      margin: 1em 0.5em 0;
+      display: inline-block;
+      @include mq(medium) {
+        margin: 0 0 0 2em;
+      }
+    }
+    #toggle-nav {
+      color: $white;
+      margin-top: 26px;
+      font-size: em(22px);
+    }
+  }
+
+  #toggle-nav {
+    float: right;
+    line-height: em($logo-mark--height);
+    height: em($logo-mark--height);
+    position: relative;
+    z-index: 2;
+    margin-top: 10px;
+    .no-js & {
+      display: none;
+    }
+    @include mq(medium) {
+      display: none;
+    }
+  }
+}

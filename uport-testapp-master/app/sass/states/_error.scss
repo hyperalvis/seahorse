@@ -1,0 +1,25 @@
+$error: #fb2234;
+
+form {
+	&.error {
+		p.error-message {
+			font-weight:bold;
+			background-color: $error;
+			color: $white;
+			max-width: 80%;
+			margin: 0 auto;
+			border-radius: $br--default;
+			padding: 15px 10px;
+		}
+		input {
+			border: 3px solid $error;
+		}
+		&.animated {
+			ol {
+				-webkit-animation: shake 0.5s;
+				-moz-animation: shake 0.5s;
+				animation: shake 0.5s;
+			}	
+		}
+	}
+}

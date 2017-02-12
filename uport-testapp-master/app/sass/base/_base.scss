@@ -1,0 +1,57 @@
+body {
+	background-color: $color-background;
+	font-family: $font-family--primary;
+	font-size: $base__font-size;
+}
+
+h1 {
+	font-size: em(32px);
+	font-weight: 800;
+	letter-spacing: -1px;
+	color: $color-secondary;
+}
+
+h4 {
+	font-size: 16px;
+	font-weight: 700;
+	letter-spacing: -0.4px;
+}
+
+// Images
+
+img {
+  margin-bottom: em(24px);
+  max-width: 100%;
+  height: auto;
+}
+
+a,
+button,
+input,
+textarea,
+div {
+	outline: none !important;
+}
+
+a {
+	color: #2092ED;
+	font-weight: 600;
+	text-decoration: none;
+
+	&.active {
+		font-weight: 800;
+	}
+}
+
+hr {
+	border-top: 2px solid #ecece5;
+}
+
+ul.no-list {
+	list-style: none;
+	padding: 0px;
+
+	> li {
+		padding-bottom: 5px;
+	}
+}

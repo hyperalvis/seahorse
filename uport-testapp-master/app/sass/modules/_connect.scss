@@ -1,0 +1,67 @@
+.connect {
+	height: 100%;
+	width: 100%;
+	position:absolute;
+	top: 0;
+	left: 0;
+	// background-image: url($path--rel + 'home-bg.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: #272727;
+
+	canvas {
+		border: 10px solid #fff
+	}
+
+	.centered {
+		text-align: center;
+	}
+
+	h1,h2 {
+		color: #2092ED;
+	}
+	h2 {
+		font-weight: $font-weight--medium;
+		font-size: em(24px);
+	}
+	p {
+		font-size: em(14px);
+	}
+
+	main {
+    padding: 0;
+    width: 100%;
+    @include vertical-align();
+	}
+
+	.apply {
+		margin: 0 auto;
+		max-width: 400px;
+		text-align: center;
+		h2 {
+			margin-bottom: 0;
+		}
+	}
+	.generate-seed {
+		max-width: 420px;
+		background-color: rgba(0,0,0,0.2);
+		border-radius: 5px;
+		padding: 20px 40px;
+		p {
+			padding: 0 0 10px;
+			&.important {
+				background-color: $maroon-flush;
+				padding: 15px 8px 15px;
+			}
+		}
+		ol li {
+			margin: 20px 0;
+			&:first-child {
+				margin-top: 20px;
+			}
+		}
+		&.seed-success h2 {
+			padding-bottom: 0;
+		}
+	}
+}

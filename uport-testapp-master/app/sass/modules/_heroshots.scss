@@ -1,0 +1,108 @@
+.heroshot {
+    position: relative;
+    z-index: 1;
+    margin-top: 0;
+}
+
+.heroshot-image-wrapper {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.heroshot-image {
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+    display: block;
+
+    /*@include responsive('(min-width: 760px)') {
+        max-width: 100%;
+    }*/
+}
+
+.heroshot-caption-title {
+    .heroshot-caption-title-link,
+    .heroshot-caption-title-link:hover,
+    .heroshot-caption-title-link:focus {
+        color: $color-background;
+    }
+}
+
+@media screen and (min-width: 480px) {
+    .heroshot-caption {
+        bottom: 10%;
+        left: 0;
+        max-width: 100%;
+        position: absolute;
+        width: 100%;
+        z-index: 3;
+    }
+
+    .heroshot-caption-title {
+        font-size: 2.8em;
+        margin: 0 auto;
+        max-width: 1110px;
+
+        .heroshot-caption-title-link,
+        .heroshot-caption-title-link:hover,
+        .heroshot-caption-title-link:focus {
+            color: $white;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .heroshot-caption {
+        bottom: 15%;
+    }
+
+    .heroshot-caption-title {
+        font-size: 3.4em;
+        padding-left: 10px;
+    }
+}
+
+@media screen and (min-width: 1170px) {
+    .heroshot-caption-title {
+        font-size: 3.8em;
+    }
+}
+
+.site-top-bar-transparent + .heroshot {
+    margin-top: -60px;
+}
+
+/* Homepage */
+
+.heroshot-caption {
+    height: 100%;
+    left: 0;
+    max-width: 1160px;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 3;
+}
+
+.heroshot-image {
+    position: relative;
+    height: 480px;
+    background-size: cover;
+
+    /*
+    @include responsive('(min-width: 760px)') {
+        height: 440px;
+        background-size: cover;
+        
+    }
+
+    @include responsive('(max-width: 520px)') {
+        height: 360px;
+        background-size: cover;
+        background-position: 30% 0;
+    }
+    */
+}

@@ -1,0 +1,12 @@
+#container {
+	position: relative;
+	//min 960
+		margin-left: $nav-width;
+  	max-width: (1500px - $nav-width);
+  	top: 120px; // make variable
+}
+
+#content {
+	// min 960
+		padding: 0 30px 30px;
+}
