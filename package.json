@@ -1,0 +1,19 @@
+{
+  "name": "rtbf seahorse",
+  "version": "1.0.0",
+  "description": "Inform the people and onboard them in a conversation. Store ypur personal data setting; the right to be forgotten",
+  "main": "app.js",
+  "dependencies": {
+    "botbuilder": "^3.4.4",
+    "fs": "^0.0.1-security",
+    "qrcode-reader": "^0.2.2",
+    "restify": "^4.3.0",
+    "xmlhttprequest": "^1.8.0",
+    "async": "~1.0.0",
+    "winston": "^2.3.0"
+  },
+  "engines":{"node": "6.9.4"},
+  "devDependencies": {},
+  "author": "@hyperalvis",
+  "license": "ISC"
+}
